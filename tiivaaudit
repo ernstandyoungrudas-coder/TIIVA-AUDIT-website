@@ -1,0 +1,291 @@
+<!--
+Repository: TIIVA-AUDIT-website
+Files included in this single-file preview:
+- index.html  (this file) — полностью рабочая одностраничная вёрстка
+
+Как использовать: откройте этот файл в браузере или скопируйте его в корень GitHub репозитория (как index.html) и включите GitHub Pages (branch: main) — сайт будет опубликован.
+-->
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TIIVA AUDIT — Юридическая и аудиторская поддержка</title>
+  <meta name="description" content="TIIVA AUDIT — профессиональные юридические и аудиторские услуги: сопровождение бизнеса, налоговое планирование, комплаенс, корпоративное право." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="TIIVA AUDIT — юридические и аудиторские услуги">
+  <meta property="og:description" content="Надёжные решения для вашего бизнеса: аудит, налоги, сопровождение сделок и комплаенс.">
+  <meta property="og:type" content="website">
+  <style>
+    :root{--bg:#0b1220;--card:#0f1724;--accent:#2dd4bf;--muted:#94a3b8;--glass: rgba(255,255,255,0.03);}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background: linear-gradient(180deg,#020617 0%, #07122a 100%);color:#e6eef8}
+    a{color:var(--accent);text-decoration:none}
+    header{backdrop-filter: blur(6px);background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-bottom:1px solid rgba(255,255,255,0.03)}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#041024}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;padding:60px 0}
+    h1{font-size:28px;margin:0 0 12px;line-height:1.02}
+    p.lead{color:var(--muted);margin:0 0 20px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:10px;border:0;font-weight:600;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#04202b}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow: 0 6px 20px rgba(3,6,23,0.6);}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .service{padding:16px;border-radius:12px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    footer{padding:30px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:40px}
+    .contact-card{display:flex;flex-direction:column;gap:8px}
+    input,textarea{width:100%;padding:12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit}
+    .small{font-size:13px;color:var(--muted)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.services{grid-template-columns:1fr 1fr}.grid-2{grid-template-columns:1fr}}
+    @media (max-width:520px){.services{grid-template-columns:1fr}.nav ul{display:none}.container{padding:18px}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "TIIVA AUDIT",
+    "url": "https://your-username.github.io/TIIVA-AUDIT-website/",
+    "logo": "https://your-domain.com/logo.png",
+    "description": "Юридическая и аудиторская поддержка для бизнеса: аудит, налоги, комплаенс, сопровождение сделок.",
+    "address": {"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"},
+    "telephone": "+7 (495) 000-00-00"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">TA</div>
+        <div>
+          <div style="font-weight:700">TIIVA AUDIT</div>
+          <div class="small">Юридические и аудиторские услуги</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#about">О компании</a></li>
+          <li><a href="#team">Команда</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>TIIVA AUDIT — надёжная юридическая и аудиторская поддержка для вашего бизнеса</h1>
+        <p class="lead">Мы помогаем компаниям снижать риски, оптимизировать налоговую нагрузку и сопровождать сделки на всех этапах. Опытные юристы и аудиторы, индивидуальный подход и понятные решения.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#contact">Заказать консультацию</a>
+          <a class="btn btn-ghost" href="#services">Наши услуги</a>
+        </div>
+
+        <div class="card" style="margin-top:22px">
+          <strong>Почему выбирают нас</strong>
+          <ul class="small" style="margin:8px 0 0;padding-left:18px;color:var(--muted)">
+            <li>Глубокий профильный опыт в налоговом и корпоративном праве</li>
+            <li>Чёткая методология аудита и прозрачная стоимость</li>
+            <li>Сопровождение сделок, M&A и коммерческих споров</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Бесплатная первичная консультация</h3>
+        <p class="small">Оставьте заявку — мы свяжемся в течение рабочего дня.</p>
+        <form id="contactForm" class="contact-card" onsubmit="handleSubmit(event)">
+          <input type="text" id="name" placeholder="Имя*" required />
+          <input type="tel" id="phone" placeholder="Телефон или WhatsApp*" required />
+          <input type="email" id="email" placeholder="Email" />
+          <button class="btn btn-primary" type="submit">Отправить заявку</button>
+          <div id="msg" class="small" aria-live="polite"></div>
+        </form>
+      </aside>
+    </section>
+
+    <section id="services">
+      <h2>Услуги</h2>
+      <div class="services">
+        <div class="service">
+          <strong>Аудит финансовой отчётности</strong>
+          <p class="small">Проверка по международным и российским стандартам, подготовка отчётов и рекомендаций.</p>
+        </div>
+        <div class="service">
+          <strong>Налоговое планирование</strong>
+          <p class="small">Разработка схем оптимизации, защита в налоговых спорах.</p>
+        </div>
+        <div class="service">
+          <strong>Корпоративное право</strong>
+          <p class="small">Сопровождение сделок, реорганизация, комплаенс.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:28px">
+      <div class="grid-2">
+        <div class="card">
+          <h3>О компании</h3>
+          <p class="small">TIIVA AUDIT — команда профессионалов с опытом сопровождения как малых стартапов, так и крупных корпораций. Мы совмещаем практический опыт юристов и методики аудита для комплексной оценки рисков и предложений по улучшению бизнес-процессов.</p>
+          <p class="small"><strong>Наш подход:</strong> прозрачность, планируемые результаты и минимизация рисков.</p>
+        </div>
+        <div class="card">
+          <h3>Кейсы</h3>
+          <ul class="small" style="margin:0;padding-left:18px">
+            <li>Снижение налоговой нагрузки для производителя — 18% экономии</li>
+            <li>Сопровождение сделки M&A — успешно закрыта за 3 месяца</li>
+            <li>Аудит крупной структуры — выявлены и устранены системные риски</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" style="margin-top:28px">
+      <h2>Команда</h2>
+      <div class="services">
+        <div class="service">
+          <strong>Анна Петрова</strong>
+          <p class="small">Руководитель юридического направления. 12 лет в корпоративном праве.</p>
+        </div>
+        <div class="service">
+          <strong>Иван Соколов</strong>
+          <p class="small">Главный аудитор. Эксперт по финансовому контролю и МСФО.</p>
+        </div>
+        <div class="service">
+          <strong>Консалтинг</strong>
+          <p class="small">Команда поддержки по налогам и комплаенсу.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <h2>Контакты</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Связаться</h3>
+          <p class="small">Телефон: <a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
+          <p class="small">Email: <a href="mailto:info@tiivaaudit.ru">info@tiivaaudit.ru</a></p>
+          <p class="small">Адрес: г. Москва</p>
+          <p class="small">График: Пн–Пт 9:00–18:00</p>
+        </div>
+        <div class="card">
+          <h3>Оставить сообщение</h3>
+          <form class="contact-card" onsubmit="handleContact(event)">
+            <input type="text" id="cname" placeholder="Имя*" required />
+            <input type="email" id="cemail" placeholder="Email*" required />
+            <textarea id="cmessage" rows="4" placeholder="Сообщение*" required></textarea>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+            <div id="cmsg" class="small" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="small">© TIIVA AUDIT — Все права защищены</div>
+        <div class="small">Политика конфиденциальности • Пользовательское соглашение</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const phone=document.getElementById('phone').value.trim();
+      const msg=document.getElementById('msg');
+      if(!name||!phone){msg.textContent='Пожалуйста, заполните имя и телефон.';return}
+      // Для простоты — откроем почтовый клиент. На продакшне — отправлять на сервер/CRM.
+      const subject=encodeURIComponent('Заявка с сайта TIIVA AUDIT');
+      const body=encodeURIComponent(`Имя: ${name}\nТелефон: ${phone}`);
+      window.location.href = `mailto:info@tiivaaudit.ru?subject=${subject}&body=${body}`;
+      msg.textContent='Открываем почтовый клиент...';
+    }
+
+    function handleContact(e){
+      e.preventDefault();
+      const name=document.getElementById('cname').value.trim();
+      const email=document.getElementById('cemail').value.trim();
+      const message=document.getElementById('cmessage').value.trim();
+      const out=document.getElementById('cmsg');
+      if(!name||!email||!message){out.textContent='Заполните все поля.';return}
+      const subject=encodeURIComponent('Сообщение с сайта TIIVA AUDIT');
+      const body=encodeURIComponent(`Имя: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:info@tiivaaudit.ru?subject=${subject}&body=${body}`;
+      out.textContent='Открываем почтовый клиент...';
+    }
+
+    // Простая плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const target=document.querySelector(a.getAttribute('href'));
+        if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}
+      });
+    });
+  </script>
+
+  <!--
+  README — пошагово для чайников (короткая инструкция)
+
+  1) Создать репозиторий на GitHub
+     - Зайдите на https://github.com, войдите в аккаунт, нажмите New repository
+     - Имя репозитория: TIIVA-AUDIT-website (или любое другое)
+     - Сделайте репозиторий Public (или Private, если хотите)
+     - Нажмите Create repository
+
+  2) Добавить файл index.html
+     В web-интерфейсе GitHub:
+       - В репозитории нажмите Add file -> Create new file
+       - Название файла: index.html
+       - Вставьте содержимое этого файла (скопируйте весь код из этого документа)
+       - Commit new file (внизу) — Commit directly to the main branch
+
+     Локально (альтернатива):
+       - Создайте папку, поместите index.html
+       - Откройте терминал в папке и выполните:
+         git init
+         git add index.html
+         git commit -m "Initial commit"
+         git branch -M main
+         git remote add origin https://github.com/<ваш-пользователь>/<имя-репозитория>.git
+         git push -u origin main
+
+  3) Включить GitHub Pages
+     - В репозитории откройте Settings -> Pages (или Settings -> Code and automation -> Pages)
+     - В Source выберите Branch: main, Folder: / (root)
+     - Save
+     - Через минуту-две сайт будет доступен по адресу: https://<ваш-пользователь>.github.io/<имя-репозитория>/ или по user.github.io если имя репозитория совпадает
+
+  4) Заменить контактные данные и логотип
+     - В файле index.html замените телефон, email, адрес и ссылки на реальные
+     - Для логотипа: загрузите logo.png в репозиторий и поменяйте ссылку в JSON-LD и в шапке
+
+  5) Настроить форму и CRM (опционально)
+     - На данном примере форма использует mailto (открывает почтовый клиент). Для автоматизации подключите formspree.io, netlify forms или ваш бэкэнд.
+
+  6) Дополнительные улучшения (рекомендации)
+     - Добавить Favicon: положите favicon.ico и добавьте <link rel="icon" href="/favicon.ico">
+     - Настроить HTTPS (GitHub Pages использует HTTPS автоматически)
+     - Подключить Google Analytics или аналитическую платформу по инструкции
+     - Добавить файл robots.txt и sitemap.xml при необходимости
+
+  7) Обновления
+     - Вносите правки локально или через веб-интерфейс GitHub и коммитьте изменения, сайт автоматически обновится.
+
+  Если хотите, могу: сгенерировать ZIP с файлами, подготовить версию с отдельными CSS/JS файлами, добавить адаптивные изображения или сделать вариант на React/Vite + Tailwind и инструкции по деплою — скажите, какой вариант предпочитаете.
+  -->
+</body>
+</html>
